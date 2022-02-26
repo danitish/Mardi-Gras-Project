@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap");
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #8cbf3f);
+}
+
+.header {
+  background-color: #9453a6c5;
+  font-family: "Pattaya", sans-serif;
+  -webkit-box-shadow: -1px 0px 20px -4px rgba(0, 0, 0, 0.98);
+  box-shadow: -1px 0px 20px -4px rgba(0, 0, 0, 0.98);
+}
+
+.logo {
+  height: 150px;
+  margin-left: 100px;
+}
+main {
+  min-height: calc(100vh - 166px - 26.5px);
+}
+.container-media-pics {
+  width: 80%;
+  column-count: 4;
+  margin: 10px auto 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Henny Penny", cursive;
+  font-weight: bold;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  margin: 1em;
+  -webkit-box-shadow: 1px 5px 13px 1px rgba(0, 0, 0, 0.55);
+  box-shadow: 1px 5px 13px 1px rgba(0, 0, 0, 0.55);
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.videos {
+  width: 50%;
+  height: 400px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-media-pics {
+    column-count: 3;
+  }
+  .videos {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container-media-pics {
+    column-count: 2;
+  }
+  .videos {
+    width: 90%;
+  }
+}
+footer {
+  margin-top: 50px;
+  background-color: #9453a6c5;
+  padding-top: 4px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  -webkit-box-shadow: -1px 0px 20px -4px rgba(0, 0, 0, 0.98);
+  box-shadow: -1px 0px 20px -4px rgba(0, 0, 0, 0.98);
+}

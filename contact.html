@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/contact.css" />
+    <script src="/js/contact.js" defer></script>
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header class="header display-5">
+      <nav
+        class="overflow-hidden navbar navbar-expand-lg navbar-light flex-wrap"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            >2022 Mardi Gras Official Website</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link me-3" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3" href="media.html">Media</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3" href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3 text-danger" href="trivia.html">
+                  Trivia</a
+                >
+              </li>
+            </ul>
+          </div>
+          <img src="/photos/logo.png" alt="Mardi Gras Logo" class="logo" />
+        </div>
+      </nav>
+    </header>
+    <form action="" class="container-lg flex" id="form">
+      <h2>Submit your info and we'll get back to you!</h2>
+      <div>
+        <label for="fname">First name:</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="e.g. Daniel"
+        />
+      </div>
+      <div>
+        <label for="lname">Last name:</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="e.g. Tishenko"
+        />
+      </div>
+      <div style="margin-left: 33px">
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="danitishenko@gmail.com"
+          onkeydown="emailValidation()"
+        />
+        <span id="text"></span>
+      </div>
+      <div class="flex" style="margin-left: 25px">
+        <span
+          >Any further questions? We'll reply to you up to 4 business days (max
+          150 words)</span
+        >
+        <textarea
+          name="text"
+          id="text"
+          cols="30"
+          rows="5"
+          placeholder="Optional"
+        ></textarea>
+      </div>
+      <button style="margin-left: 20px" onclick="checkIfEmpty()">Submit</button>
+      <a
+        href="https://www.mardigrasworld.com/about-us/getting-here/"
+        target="_blank"
+        >Call for a <strong>FREE</strong> Shuttle Ride from your Hotel!
+        504-361-7821</a
+      >
+    </form>
+    <footer>
+      <span>
+        <img
+          src="/photos/copyright.png"
+          style="height: 15px"
+          alt="copyright logo"
+        />
+        Copyright - Daniel Tishenko - Mardi Gras Project</span
+      >
+    </footer>
+  </body>
+</html>

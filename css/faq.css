@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap");
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #8cbf3f);
+}
+.header {
+  background-color: #9453a6c5;
+  font-family: "Pattaya", sans-serif;
+  -webkit-box-shadow: -1px 0px 20px -4px rgba(0, 0, 0, 0.98);
+  box-shadow: -1px 0px 20px -4px rgba(0, 0, 0, 0.98);
+}
+
+.logo {
+  height: 150px;
+  margin-left: 100px;
+}
+
+.faq-section {
+  margin-top: 50px;
+}
+.faq-title {
+  font-size: 25px;
+  background-color: #8cbf3f94;
+}
+.faq-title:not(.collapsed) {
+  background-color: rgba(0, 128, 0, 0.507);
+  color: black;
+  font-weight: 500;
+}
+
+.faq-body {
+  font-size: 17px;
+  border-bottom: 5px groove yellow;
+}
+
+footer {
+  margin-top: 63px;
+  background-color: #9453a6c5;
+  padding-top: 4px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  -webkit-box-shadow: -1px 0px 20px -4px rgba(0, 0, 0, 0.98);
+  box-shadow: -1px 0px 20px -4px rgba(0, 0, 0, 0.98);
+}
